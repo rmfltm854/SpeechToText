@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>STT Service2</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="/stt.js"></script>
+</head>
+<body>
+<!--  파일 업로드 -->
+<h3>음석 인식</h3>
+<form id="sttForm" enctype="multipart/form-data">
+    파일 : <input type="file" id="uploadFile" name="uploadFile">
+    <br>
+    언어 선택 :
+    <select name="language" id="language">
+        <option value="">언어 선택</option>
+        <option value="Kor">한국어</option>
+        <option value="Jpn">일본어</option>
+        <option value="Eng">영어</option>
+        <option value="Chn">중국어</option>
+    </select>
+    <input type="submit" value="결과 확인">
+</form>
+<br><br>
+<!-- 객체와 좌표 값 출력 -->
+STT 결과 : <div id="resultDiv"></div>
+<br><br>
+
+<a href="/">index 페이지로 이동</a>
+</body>
+</html>
